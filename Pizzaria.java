@@ -9,7 +9,6 @@ public class Pizzaria {
         do{
             System.out.println("===========================");
             System.out.println("Digite a operação desejada");
-            System.out.println("0 - Saída");
             System.out.println("1 - Cadastro de Clientes");
             System.out.println("2 - Listagem de Clientes");
             System.out.println("3 - Cadastro de Comanda");
@@ -18,13 +17,12 @@ public class Pizzaria {
             System.out.println("6 - Listagem do Tamanho");
             System.out.println("7 - Cadastro de Sabores");
             System.out.println("8 - Listagem de Sabores");
+            System.out.println("9 - Saída");
             System.out.println("===========================");
             local = scanner.nextInt();
             switch (local) {
 
-            case 0:
-            System.out.println("Muito Obrigado!!");
-            break;
+        
                 
             case 1:
             try{
@@ -150,6 +148,11 @@ public class Pizzaria {
             );    
             }
             break;
+
+            case 9:
+            System.out.println("Muito Obrigado!!");
+            break;
+           
 
             default: 
                 System.out.println("Operação Inválida");
