@@ -7,7 +7,8 @@ public class Pizzaria {
         Scanner scanner = new Scanner(System.in);
 
         do{
-            System.out.println("Digite a operação");
+            System.out.println("===========================");
+            System.out.println("Digite a operação desejada");
             System.out.println("0 - Saída");
             System.out.println("1 - Cadastro de Clientes");
             System.out.println("2 - Listagem de Clientes");
@@ -15,6 +16,7 @@ public class Pizzaria {
             System.out.println("4 - Listagem de Sabores");
             System.out.println("5 - Cadastro de Comanda");
             System.out.println("6 - Listagem de Comanda");
+            System.out.println("===========================");
             local = scanner.nextInt();
             switch (local) {
 
@@ -29,7 +31,7 @@ public class Pizzaria {
                 System.out.println("Digite seu nome: ");
                 String nome = scanner.next();
                 System.out.println("Digite seu CPF: ");
-                int cpf = scanner.nextInt();
+                String cpf = scanner.next();
                 System.out.println("Digite seu telefone para contato: ");
                 int telefone = scanner.nextInt();
                 System.err.println("Digite seu endereço: ");
@@ -157,6 +159,6 @@ public class Pizzaria {
 
         scanner.close();
     
-        }
-
     }
+
+}

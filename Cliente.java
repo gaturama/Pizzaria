@@ -4,7 +4,7 @@ public class Cliente{
 
     public int id;
     public String nome;
-    public int cpf;
+    public String cpf;
     public int telefone;
     public String endereço;
     public ArrayList<Pizza> pizza;
@@ -15,7 +15,7 @@ public class Cliente{
         int id,
         String nome, 
         int telefone,
-        int cpf,
+        String cpf,
         String endereço
     ) {
         this.id = id;

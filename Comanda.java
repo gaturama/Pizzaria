@@ -12,11 +12,11 @@ public class Comanda {
     public Comanda(
         int id,
         int numero,
-        String data2
+        String data
     ){
         this.id = id;
         this.numero = numero;
-        this.data = data2;
+        this.data = data;
         this.pizza = new ArrayList<Pizza>();
 
         comandas.add(this);
@@ -29,5 +29,5 @@ public class Comanda {
         }
 
         throw new Exception("Comanda não encontrado");
-
+    }
 }
