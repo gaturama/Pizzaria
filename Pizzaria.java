@@ -12,10 +12,12 @@ public class Pizzaria {
             System.out.println("0 - Saída");
             System.out.println("1 - Cadastro de Clientes");
             System.out.println("2 - Listagem de Clientes");
-            System.out.println("3 - Cadastrar Sabores");
-            System.out.println("4 - Listagem de Sabores");
-            System.out.println("5 - Cadastro de Comanda");
-            System.out.println("6 - Listagem de Comanda");
+            System.out.println("3 - Cadastro de Comanda");
+            System.out.println("4 - Listagem de Comanda");
+            System.out.println("5 - Cadastro do Tamanho");
+            System.out.println("6 - Listagem do Tamanho");
+            System.out.println("7 - Cadastro de Sabores");
+            System.out.println("8 - Listagem de Sabores");
             System.out.println("===========================");
             local = scanner.nextInt();
             switch (local) {
@@ -90,7 +92,7 @@ public class Pizzaria {
                     + "Número: " + comanda.numero + "\n"
                     + "Data: " + comanda.data 
             );
-            }
+            } 
             break;
 
             case 5: 
