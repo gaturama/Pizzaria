@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class Comanda {
     
-    public int id;
-    public int numero;
-    public String data;
-    public ArrayList<Pizza> pizza;
+    private int id;
+    private int numero;
+    private String data;
+    private int idPizza
 
     public static ArrayList<Comanda> comandas = new ArrayList<Comanda>();
 
@@ -17,10 +17,28 @@ public class Comanda {
         this.id = id;
         this.numero = numero;
         this.data = data;
-        this.pizza = new ArrayList<Pizza>();
 
         comandas.add(this);
     }
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
+    public int getNumero(){
+        return numero;
+    }
+    public void setNumero(int numero})
+         this.numero = numero;                   
+    }
+    public String getData(){
+        return data;
+    }
+    public void setData(String data){
+        this.data = data;
+    }
+
     public static Comanda verificaId (int id) throws Exception{
         for (Comanda comanda : comandas){
             if (comanda.id == id){
@@ -30,4 +48,12 @@ public class Comanda {
 
         throw new Exception("Comanda não encontrado");
     }
+    
+    @Override
+    public String toString(){
+        return "ID: " + id + "\n"
+            + "Número: " + numero + "\n"
+            + "Data: " + data + "\n"
+            + "Pizza: " + this.idPizza + "\n"
+        
 }
