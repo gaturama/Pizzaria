@@ -37,29 +37,17 @@ public class Pizzaria {
                 System.err.println("Digite seu endereço: ");
                 String endereço = scanner.next();
 
-                Cliente cliente = new Cliente(id, nome, telefone, cpf, endereço);
-                    System.out.println(
-                    "Id: " + cliente.id + "\n"
-                    + "Nome: " + cliente.nome + "\n"
-                    + "CPF: " + cliente.cpf + "\n"
-                    + "Telefone: "  + cliente.telefone + "\n"
-                    + "Endereço: " + cliente.endereço 
-            ); 
+                new Cliente(id, nome, telefone, cpf, endereço);
             } catch (Exception error){
                 System.out.println("Ocorreu um erro ao cadastrar o cliente." + error.getMessage());  
             }
             break;
 
             case 2: 
-                for (Cliente cliente : Cliente.clientes){
-                    System.err.println(
-                    "Id: " + cliente.id + "\n"
-                    + "Nome: " + cliente.nome + "\n"
-                    + "CPF: " + cliente.cpf + "\n"
-                    + "Telefone: "  + cliente.telefone + "\n"
-                    + "Endereço: " + cliente.endereço 
-            );
-                    System.out.println("\n");
+                public static void listarCliente(){
+                System.out.println("Listar Cliente");
+                for(Cliente cliente : Cliente.clientes){
+                      System.out.println(fabricante);
             }
             break;
 
